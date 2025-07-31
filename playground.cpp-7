@@ -1,0 +1,22 @@
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+
+int main () {
+
+    system("cls");
+
+
+    int width = 10;
+
+    cout << "Hello" << std::setw(20) << "World" << endl;
+    cout << "Hello" << std::setw(width) << "World" << endl;
+
+    cout << std::setfill('@');
+    cout << "Hello" << std::setw(20) << "World" << endl;
+    cout << "Hello" << std::setw(130) << "World" << endl;
+
+
+}

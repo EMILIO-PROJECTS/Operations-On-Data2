@@ -1,0 +1,27 @@
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+
+int main () {
+
+    system("cls");
+
+    int a = 10;
+    int b = 15;
+
+
+cout << std::boolalpha;
+
+    cout << "a = " << a << ", b = " << b << endl;
+
+
+bool result = (a == b);   // true
+
+
+    cout << a << " == " << b << " is " << result << endl;
+
+    cout << "----------------------------" << endl << endl;
+
+}

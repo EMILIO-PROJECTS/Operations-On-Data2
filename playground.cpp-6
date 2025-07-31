@@ -1,0 +1,35 @@
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+
+int main () {
+
+    system("cls");
+
+
+    bool a = true;
+    bool b = false;
+    bool c = true;
+
+    cout << std::boolalpha;
+
+
+    // Use cases
+    int d = 25;
+    int e = 20;
+    int f = 11;
+
+    cout << "(d > e)  && (d > f):  " << ((d > e) && (d > f)) << endl;               // true
+    cout << "(d == e) || (e <= f): " << ((d == e) || (e <= f)) << endl;            // false
+    cout << "(d < e)  || (d > f):  " << ((d < e) || (d > f)) << endl;              // true
+    cout << "(f > e)  || (d < f):  " << ((f > e) || (d < f)) << endl;              // false
+
+    cout << "(d > f)  && (f <= d): " << ((d > f) && (f <= d)) << endl;             // true
+    cout << "(d > e)  && (d <= f): " << ((d > e) && (d < f || d == f)) << endl;    // false
+
+    cout << "(!a)  && (d == e):    " << ((!a) && (d == e)) << endl;                // false
+
+
+}

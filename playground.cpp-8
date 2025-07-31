@@ -1,0 +1,28 @@
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+
+int main () {
+
+    system("cls");
+
+
+        int number = 12233;
+
+    cout << "number in hex: " << std::hex << number << endl;
+    cout << "number in dec: " << std::dec << number << endl;
+    cout << "number in oct: " << std::oct << number << endl;
+
+    double pi = 3.1415926535897932384626433832795;     // 15
+
+    cout << "pi: " << pi << endl;
+
+    cout << std::scientific;
+    cout << "pi: " << pi << endl;
+
+    cout << std::setprecision(50);
+    cout << "pi: " << pi << endl;
+
+}
